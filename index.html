@@ -2,572 +2,774 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>EMSISIT - SUMMER COMPETITION 2024</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <!-- Favicon -->
-    <link href="img/favicon.png" rel="icon">
+  <title>EMSIST COMP</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Ubuntu:wght@500;700&display=swap"
-        rel="stylesheet">
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
 
-    <!-- Template Stylesheet -->
+   <style>
+      #uiColor{
+        background: #BA8B02;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right,#BA8B02, #181818 );  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right,  #BA8B02,#181818); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      
+      }
+   </style>
+   <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
 
-    <link href="css/style.css" rel="stylesheet">
-
-
-    <style>
-        #bgg{
-            background: #BA8B02;  /* fallback for old browsers */
-            background: -webkit-linear-gradient(to right,#BA8B02, #181818 );  /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(to right,  #BA8B02,#181818); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-            
-            
-        
-        }
-
-      ::-webkit-scrollbar{
-    background-color: rgb(35, 36, 33);
-    width: 10px;
-
-
-}
-
-     ::-webkit-scrollbar-thumb{
-    background-color: #BA8B02;}
-
-    </style>
 </head>
 
-
-<!--   Sweet Alert Cdn -->
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
-
-<!--  Animate css   -->
-<link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-
 <body>
-    <!-- Spinner Start -->
-    <div id="spinner"
-        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-grow text-warning" style="width: 3rem; height: 3rem;" role="status">
-            <span class="sr-only">Loading...</span>
-        </div>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex justify-content-between">
+
+      <div class="logo mt-2" style="margin-left: 50px;">
+        <!-- Uncomment below if you prefer to use an text logo -->
+        <!-- <h1><a href="index.html">NewBiz</a></h1> -->
+       <img src="assets/img/logo.png" style="scale:2" width="100px" alt="" class="img-fluid">
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Acceuil</a></li>
+          <li><a class="nav-link scrollto" href="#about">A Propos</a></li>
+          <li><a class="nav-link scrollto" href="#clients">Partenaire</a></li>
+          <li><a class="nav-link scrollto " href="#portfolio">Equipes</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
     </div>
-    <!-- Spinner End -->
+  </header><!-- #header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="clearfix">
+    <div class="container" data-aos="fade-up">
+
+      <div class="hero-img" data-aos="zoom-out" data-aos-delay="200">
+        <img src="assets/img/banner2.png" alt="" class="img-fluid">
+      </div>
+
+      <div class="hero-info" data-aos="zoom-in" data-aos-delay="100">
+        <h2>L'IA, le Cloud et la Cybersécurité au Service de la Société</h2>
+        <div>
+          <a href="#about" class="btn-get-started scrollto">Get Started</a>
+      
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End Hero Section -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about">
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h3>A Propos</h3>
+          <p>IMAGINE , INNOVATE , IMPACT</p>
+        </header>
+
+        <div class="row about-container">
+
+          <div class="col-lg-6 content order-lg-1 order-2">
+           <h1>Présentation de l’évènement</h1> 
+            <p>
+              L’École Marocaine de Science d'Ingénieurs (EMSI) organise la première édition de la Compétition d'Été 2024 en informatique. Cet événement vise à stimuler l'innovation technologique chez les futurs ingénieurs marocains, leur offrant une plateforme pour démontrer leur créativité et leurs compétences en résolution de problèmes.
+            </p>
+
+            <h1>Thème de l'édition : "L'IA, le Cloud et la Cybersécurité au Service de la Société"</h1> 
+            <p>
+              Cette compétition met en lumière l'importance de ces technologies pour répondre aux défis actuels. Les étudiants auront l'opportunité de travailler sur des projets validés par des entreprises partenaires, développant ainsi des compétences pratiques tout en contribuant à des solutions ayant un impact sociétal.
+            </p>
+
+            
+
+          </div>
+
+          <div class="col-lg-6 background order-lg-2" data-aos="zoom-in">
+            <img src="assets/img/about-img.svg" class="img-fluid" alt="">
+          </div>
+        </div>
+
+        <div class="row about-extra">
+          <div class="col-lg-6" data-aos="fade-right">
+            <img src="assets/img/about-extra-1.svg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-5 pt-lg-0" data-aos="fade-left">
+            <h4>Objectifs pour les participants :</h4>
+            <div class="row about-container">
+            <div class="col-lg-6 content order-lg-1 order-2">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><i class="bi bi-card-checklist"></i></div>
+              <p class="description">•Proposer des solutions technologiques innovantes.</p>
+              <p class="description">•Développer des compétences techniques et transversales.</p>
+            </div>
+
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon"><i class="bi bi-brightness-high"></i></div>
+              <p class="description">•Utiliser leurs connaissances en IA, Cloud Computing et Cybersécurité.</p>
+              <p class="description">•Présenter leurs projets à un panel d'experts.</p>
+            </div>
+
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+              <div class="icon"><i class="bi bi-calendar4-week"></i></div>
+              <p class="description">•Profiter d'un stage d’été enrichissant avec l'encadrement de professionnels partenaires et nos professeurs de haut niveau.</p>
+              <p class="description">•Concourir pour remporter des prix prestigieux et bénéficier d'une reconnaissance professionnelle..</p>
+            </div>
+          </div>
+          </div>
+          </div>
+        </div>
+
+        <div class="row about-extra">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left">
+            <img src="assets/img/about-extra-2.svg" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-right">
+            <h4>Organisme d’accueil</h4>
+            <p>
+              Fondée en 1986, l'EMSI est reconnue pour la qualité de son enseignement et l'employabilité de ses diplômés. Avec 18 campus et plus de 18 000 lauréats, l'EMSI forme 13 000 élèves en ingénierie.
+            </p>
+            
+           
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+<!-- start  RoadMap -->
+<div class="progress-wrapper">
+  <div id="progress-bar-container">
+    <ul>
+      <li class="step step01 active">
+        <div class="step-inner">Qualification</div>
+      </li>
+      <li class="step step02">
+        <div class="step-inner">Epreuve</div>
+      </li>
+      
+      <li class="step step03">
+        <div class="step-inner">Finale</div>
+      </li>
+    </ul>
+    <div id="line">
+      <div id="line-progress"></div>
+    </div>
+    <!-- progress-bar-container -->
+    <div id="progress-content-section">
+      <div class="section-content step1 active">
+        <h2>Step 1</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat,
+          impedit! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, soluta impedit. Eligendi aliquam ratione porro minus temporibus facilis iure numquam.
+        </p>
+      </div>
+      <div class="section-content step2">
+        <h2>Step 2</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat,
+          impedit! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, soluta impedit. Eligendi aliquam ratione porro minus temporibus facilis iure numquam.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat,
+          impedit! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, soluta impedit. Eligendi aliquam ratione porro minus temporibus facilis iure numquam.
+        </p>
+      </div>
+      <div class="section-content step3">
+        <h2>Step 3</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat,
+          impedit! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, soluta impedit. Eligendi aliquam ratione porro minus temporibus facilis iure numquam.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat,
+          impedit! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, soluta impedit. Eligendi aliquam ratione porro minus temporibus facilis iure numquam.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat,
+          impedit! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, soluta impedit. Eligendi aliquam ratione porro minus temporibus facilis iure numquam.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- progress-wrapper -->
+</div>
+<!-- end RoadMap-->
 
 
-    <!-- Navbar Start -->
-    <div class="container-fluid">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-dark p-0">
-              
-                    <!--<h1 class="text-white">AI<span class="text-dark">.</span>Tech</h1>-->
-                    
-                    <img src="./img/logo.png" style="margin-top: 20px;" alt="" width="200px" height="80px" >
-                    
+
+
+  
+
+
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="section-bg">
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h3>Partenaires</h3>
+         <h3>Nos Partenaires internes</h3> 
+          <p>Département informatique - EMSI
+            Centre de recherche et innovation – EMSI
+            </p>
+            <h3>Nos entreprises partenaire</h3> 
+        </div>
+
+        <div class="row g-0 clients-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="client-logo">
+              <img src="assets/img/clients/client-1.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="client-logo">
+              <img src="assets/img/clients/client-2.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="client-logo">
+              <img src="assets/img/clients/client-3.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="client-logo">
+              <img src="assets/img/clients/client-4.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="client-logo">
+              <img src="assets/img/clients/client-5.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="client-logo">
+              <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="client-logo">
+              <img src="assets/img/clients/client-7.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="client-logo">
+              <img src="assets/img/clients/client-8.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- End Clients Section -->
+
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us">
+      <div class="container" data-aos="fade-up">
+        <header class="section-header">
+          <h3 style="color: white;">Why choose us?</h3>
+          <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.</p>
+        </header>
+
+        <div class="row row-eq-height justify-content-center">
+
+          <div class="col-lg-4 mb-4">
+            <div class="card" data-aos="zoom-in" data-aos-delay="100">
+              <i class="bi bi-calendar4-week"></i>
+              <div class="card-body">
+                <h5 class="card-title">Corporis dolorem</h5>
+                <p class="card-text">Deleniti optio et nisi dolorem debitis. Aliquam nobis est temporibus sunt ab inventore officiis aut voluptatibus.</p>
              
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-4">
+            <div class="card" data-aos="zoom-in" data-aos-delay="200">
+              <i class="bi bi-camera-reels"></i>
+              <div class="card-body">
+                <h5 class="card-title">Voluptates dolores</h5>
+                <p class="card-text">Voluptates nihil et quis omnis et eaque omnis sint aut. Ducimus dolorum aspernatur.</p>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mb-4">
+            <div class="card" data-aos="zoom-in" data-aos-delay="300">
+              <i class="bi bi-chat-square-text"></i>
+              <div class="card-body">
+                <h5 class="card-title">Eum ut aspernatur</h5>
+                <p class="card-text">Autem quod nesciunt eos ea aut amet laboriosam ab. Eos quis porro in non nemo ex. </p>
+                
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row counters" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Clients</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="421" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Projects</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="1364" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Hours Of Support</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="42" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Hard Workers</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="clearfix">
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h3 class="section-title">Equipes</h3>
+        </header>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-card">Card</li>
+              <li data-filter=".filter-web">Web</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/app1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="portfolio-details.html">App 1</a></h4>
+                <p>App</p>
               
                 
-                    <div class="navbar-nav ms-auto" style="all:unset">
-                       
-                        
-                       
-                        <!--<a href="https://docs.google.com/forms/d/e/1FAIpQLScM68U5VZX-mRjnoNYBx-qtZk5s8-TsaE9gYvRsyR03s_57yg/viewform?usp=sf_link" target="_blank" class="btn btn-outline-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">Formulaire</a> -->
-                    </div>
-                    
+              </div>
+              <div
+                style="width:100%;height:70px;background-color: rgb(88, 54, 12);color:white;font-size:20pt;display:flex;justify-content:center;align-items:center;"
+                >
+                   CHAOUKAT OMAR 
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/web3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="portfolio-details.html">Web 3</a></h4>
+                <p>Web</p>
+              
+              </div>
+              <div
+              style="width:100%;height:70px;background-color: rgb(88, 54, 12);color:white;font-size:20pt;display:flex;justify-content:center;align-items:center;"
+              >
+              AYA IDOUAHMANE
+            </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/app2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="portfolio-details.html">App 2</a></h4>
+                <p>App</p>
+             
+              </div>
+              <div
+              style="width:100%;height:70px;background-color: rgb(88, 54, 12);color:white;font-size:20pt;display:flex;justify-content:center;align-items:center;"
+              >
+              ELBOUANANI HAMZA
+            </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/card2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="portfolio-details.html">Card 2</a></h4>
+                <p>Card</p>
+                
+              </div>
+              <div
+              style="width:100%;height:70px;background-color: rgb(88, 54, 12);color:white;font-size:20pt;display:flex;justify-content:center;align-items:center;"
+              >
+              Youssef Riad 
+            </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/web2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="portfolio-details.html">Web 2</a></h4>
+                <p>Web</p>
                
-            </nav>
-        </div>
-    </div>
-    <!-- Navbar End -->
-
-
-    <!-- Hero Start -->
-    <div class="container-fluid pt-5   hero-header mb-5"  id="bgg">
-        <div class="container pt-5">
-            <div class="row g-5 pt-5">
-                <div class="col-lg-6 align-self-center text-center text-lg-start mb-lg-5">
-                    <div class="btn btn-sm border rounded-pill text-white px-3 mb-3 animated slideInRight">EMSISIT</div>
-                    <h1 class="display-4 text-white mb-4 animated slideInRight">Artificial Intelligence for Your Business</h1>
-                    <p class="text-white mb-4 animated slideInRight">Tempor rebum no at dolore lorem clita rebum rebum ipsum
-                        rebum stet dolor sed justo kasd. Ut dolor sed magna dolor sea diam. Sit diam sit</p>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScM68U5VZX-mRjnoNYBx-qtZk5s8-TsaE9gYvRsyR03s_57yg/viewform?usp=sf_link" class="btn btn-light py-sm-3 px-sm-5 rounded-pill me-3 animated slideInRight">Participer</a>
-                    
-                </div>
-                <div class="col-lg-6 align-self-end text-center text-lg-end">
-                    <img class="img-fluid" src="img/hero-img.png" alt="">
-                </div>
+              </div>
+              <div
+              style="width:100%;height:70px;background-color: rgb(88, 54, 12);color:white;font-size:20pt;display:flex;justify-content:center;align-items:center;"
+              >
+              Ghannane Intissar
             </div>
-        </div>
-    </div>
-    <!-- Hero End -->
-
-
-    <!-- Full Screen Search Start -->
-
-    <!-- Full Screen Search End -->
-
-
-    <!-- About Start -->
-    <div class="container-fluid py-5">
-        <div class="container">
-            <div class="row g-5 align-items-center">
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                    <div class="about-img">
-                        <img class="img-fluid" src="img/about-img.jpg">
-                    </div>
-                </div>
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="btn btn-sm border rounded-pill  px-3 mb-3" style="color: #BA8B02;">About Us</div>
-                    <h1 class="mb-4">We Make Your Business Smarter with Artificial Intelligence</h1>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam
-                        amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus
-                        clita duo justo et tempor eirmod magna dolore erat amet</p>
-                    <p class="mb-4">Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no
-                        labore lorem sit. Sanctus clita duo justo et tempor.</p>
-                    <div class="row g-3">
-                        <div class="col-sm-6">
-                            <h6 class="mb-3"><i class="fa fa-check  me-2"></i>Award Winning</h6>
-                            <h6 class="mb-0"><i class="fa fa-check  me-2"></i>Professional Staff</h6>
-                        </div>
-                        <div class="col-sm-6">
-                            <h6 class="mb-3"><i class="fa fa-check  me-2"></i>24/7 Support</h6>
-                            <h6 class="mb-0"><i class="fa fa-check  me-2"></i>Fair Prices</h6>
-                        </div>
-                    </div>
-                  
-                </div>
             </div>
-        </div>
-    </div>
-    <!-- About End -->
+          </div>
 
-
-    <!-- Service Start -->
-    <div class="container-fluid bg-light mt-5 py-5">
-        <div class="container py-5">
-            <div class="row g-5 align-items-center">
-                <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
-                    <div class="btn btn-sm border rounded-pill  px-3 mb-3" style="color: #BA8B02;">Our Services</div>
-                    <h1 class="mb-4">Our Excellent AI Solutions for Your Business</h1>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam
-                        amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus
-                        clita duo justo et tempor eirmod magna dolore erat amet</p>
-                    <a class="btn  rounded-pill px-4" href="" style="background: #BA8B02;color:white;">Read More</a>
-                </div>
-                <div class="col-lg-7">
-                    <div class="row g-4">
-                        <div class="col-md-6">
-                            <div class="row g-4">
-                                <div class="col-12 wow fadeIn" data-wow-delay="0.1s">
-                                    <div class="service-item d-flex flex-column justify-content-center text-center rounded">
-                                        <div class="service-icon btn-square">
-                                            <i class="fa fa-robot fa-2x"></i>
-                                        </div>
-                                        <h5 class="mb-3">Robotic Automation</h5>
-                                        <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet
-                                            diam sed stet lorem.</p>
-                                        <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
-                                    </div>
-                                </div>
-                                <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
-                                    <div class="service-item d-flex flex-column justify-content-center text-center rounded">
-                                        <div class="service-icon btn-square">
-                                            <i class="fa fa-power-off fa-2x"></i>
-                                        </div>
-                                        <h5 class="mb-3">Machine learning</h5>
-                                        <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet
-                                            diam sed stet lorem.</p>
-                                        <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 pt-md-4">
-                            <div class="row g-4">
-                                <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
-                                    <div class="service-item d-flex flex-column justify-content-center text-center rounded">
-                                        <div class="service-icon btn-square">
-                                            <i class="fa fa-graduation-cap fa-2x"></i>
-                                        </div>
-                                        <h5 class="mb-3">Education & Science</h5>
-                                        <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet
-                                            diam sed stet lorem.</p>
-                                        <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
-                                    </div>
-                                </div>
-                                <div class="col-12 wow fadeIn" data-wow-delay="0.7s">
-                                    <div class="service-item d-flex flex-column justify-content-center text-center rounded">
-                                        <div class="service-icon btn-square">
-                                            <i class="fa fa-brain fa-2x"></i>
-                                        </div>
-                                        <h5 class="mb-3">Predictive Analysis</h5>
-                                        <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet
-                                            diam sed stet lorem.</p>
-                                        <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/app3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="portfolio-details.html">App 3</a></h4>
+                <p>App</p>
+              
+              </div>
+              <div
+              style="width:100%;height:70px;background-color: rgb(88, 54, 12);color:white;font-size:20pt;display:flex;justify-content:center;align-items:center;"
+              >
+                 CHAOUKAT OMAR 
             </div>
-        </div>
-    </div>
-    <!-- Service End -->
-
-
-    <!-- Feature Start -->
-    <div class="container-fluid bg-primary feature pt-5" id="bgg">
-        <div class="container pt-5">
-            <div class="row g-5">
-                <div class="col-lg-6 align-self-center mb-md-5 pb-md-5 wow fadeIn" data-wow-delay="0.3s">
-                    <div class="btn btn-sm border rounded-pill text-white px-3 mb-3">Why Choose Us</div>
-                    <h1 class="text-white mb-4">We're Best in AI Industry with 10 Years of Experience</h1>
-                    <p class="text-light mb-4">Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed
-                        stet no labore lorem sit. Sanctus clita duo justo et tempor</p>
-                    <div class="d-flex align-items-center text-white mb-3">
-                        <div class="btn-sm-square bg-white text-primary rounded-circle me-3">
-                            <i class="fa fa-check"></i>
-                        </div>
-                        <span>Diam dolor diam ipsum et tempor sit</span>
-                    </div>
-                    <div class="d-flex align-items-center text-white mb-3">
-                        <div class="btn-sm-square bg-white text-primary rounded-circle me-3">
-                            <i class="fa fa-check"></i>
-                        </div>
-                        <span>Diam dolor diam ipsum et tempor sit</span>
-                    </div>
-                    <div class="d-flex align-items-center text-white mb-3">
-                        <div class="btn-sm-square bg-white text-primary rounded-circle me-3">
-                            <i class="fa fa-check"></i>
-                        </div>
-                        <span>Diam dolor diam ipsum et tempor sit</span>
-                    </div>
-                    <div class="row g-4 pt-3">
-                        <div class="col-sm-6">
-                            <div class="d-flex rounded p-3" style="background: rgba(256, 256, 256, 0.1);">
-                                <i class="fa fa-users fa-3x text-white"></i>
-                                <div class="ms-3">
-                                    <h2 class="text-white mb-0" data-toggle="counter-up">9999</h2>
-                                    <p class="text-white mb-0">Happy Clients</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="d-flex rounded p-3" style="background: rgba(256, 256, 256, 0.1);">
-                                <i class="fa fa-check fa-3x text-white"></i>
-                                <div class="ms-3">
-                                    <h2 class="text-white mb-0" data-toggle="counter-up">9999</h2>
-                                    <p class="text-white mb-0">Project Complete</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 align-self-end text-center text-md-end wow fadeIn" data-wow-delay="0.5s">
-                    <img class="img-fluid" src="img/feature.png" alt="">
-                </div>
             </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/card1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="portfolio-details.html">Card 1</a></h4>
+                <p>Card</p>
+              
+              </div>
+              <div
+              style="width:100%;height:70px;background-color: rgb(88, 54, 12);color:white;font-size:20pt;display:flex;justify-content:center;align-items:center;"
+              >
+                 CHAOUKAT OMAR 
+            </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/card3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="portfolio-details.html">Card 3</a></h4>
+                <p>Card</p>
+            
+              </div>
+              <div
+              style="width:100%;height:70px;background-color: rgb(88, 54, 12);color:white;font-size:20pt;display:flex;justify-content:center;align-items:center;"
+              >
+                 CHAOUKAT OMAR 
+            </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/web1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4><a href="portfolio-details.html">Web 1</a></h4>
+                <p>Web</p>
+            
+              </div>
+              <div
+              style="width:100%;height:70px;background-color: rgb(88, 54, 12);color:white;font-size:20pt;display:flex;justify-content:center;align-items:center;"
+              >
+                 CHAOUKAT OMAR 
+            </div>
+            </div>
+          </div>
+
         </div>
-    </div>
-    <!-- Feature End -->
 
+      </div>
+    </section><!-- End Portfolio Section -->
 
-    <!-- Case Start -->
+    <!-- ======= Testimonials Section ======= -->
     
-    <!-- Case End -->
 
+    <!-- ======= Team Section ======= -->
+    <section id="team">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h3>Team</h3>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+        </div>
 
-<!-- start team-->
-<div class="container-fluid bg-light py-5">
-    <div class="container py-5">
-        <div class="row g-5 align-items-center">
-            <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
-                <div class="btn btn-sm border rounded-pill  px-3 mb-3" style="color: #BA8B02;">Our Team</div>
-                <h1 class="mb-4">Meet Our Experienced Team Members</h1>
-                <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam
-                    amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus
-                    clita duo justo et tempor eirmod magna dolore erat amet</p>
-                <a class="btn btn-primary rounded-pill px-4" href="" style="background: #BA8B02;color:white;">Read More</a>
-            </div>
-            <div class="col-lg-7">
-                <div class="row g-4">
-                    <div class="col-md-6">
-                        <div class="row g-4">
-                            <div class="col-12 wow fadeIn" data-wow-delay="0.1s">
-                                <div class="team-item bg-white text-center rounded p-4 pt-0">
-                                    <img class="img-fluid rounded-circle p-4" src="./img/Nadia.jpg" alt="">
-                                    <h5 class="mb-0">NADIA OUKRICH</h5>
-                                    <small>Founder & CEO</small>
-                                  
-                                </div>
-                            </div>
-                            <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
-                                <div class="team-item bg-white text-center rounded p-4 pt-0">
-                                    <img class="img-fluid rounded-circle p-4" src="img/Noussaibe.jpg" alt="">
-                                    <h5 class="mb-0">NOUSSAIBA MELOUANE</h5>
-                                    <small>Co FOUNDER</small>
-                                   
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 pt-md-4">
-                        <div class="row g-4">
-                            <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
-                                <div class="team-item bg-white text-center rounded p-4 pt-0">
-                                    <img class="img-fluid rounded-circle p-4" src="img/Noussaibe.jpg" alt="">
-                                    <h5 class="mb-0">NOUSSAIBA MELOUANE</h5>
-                                    <small>Co Founder</small>
-                                  
-                                </div>
-                            </div>
-                            <div class="col-12 wow fadeIn" data-wow-delay="0.7s">
-                                <div class="team-item bg-white text-center rounded p-4 pt-0">
-                                    <img class="img-fluid rounded-circle p-4" src="./img/Nadia.jpg" alt="">
-                                    <h5 class="mb-0">NADIA OUKRICH</h5>
-                                    <small>Project Manager</small>
-                                
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6" data-aos="zoom-out" data-aos-delay="100">
+            <div class="member">
+              <img src="assets/img/team-1.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Walter White</h4>
+                  <span>Chief Executive Officer</span>
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="zoom-out" data-aos-delay="200">
+            <div class="member">
+              <img src="assets/img/team-2.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Sarah Jhonson</h4>
+                  <span>Product Manager</span>
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="zoom-out" data-aos-delay="300">
+            <div class="member">
+              <img src="assets/img/team-3.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>William Anderson</h4>
+                  <span>CTO</span>
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="zoom-out" data-aos-delay="400">
+            <div class="member">
+              <img src="assets/img/team-4.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Amanda Jepson</h4>
+                  <span>Accountant</span>
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact">
+      <div class="container-fluid" data-aos="fade-up">
+
+        <div class="section-header">
+          <h3>Contact Us</h3>
+        </div>
+
+        
+
+   
+    <style>
+        .contact-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            width: 80%;
+            margin: 50px auto;
+            font-family: Arial, sans-serif;
+        }
+        .contact-card {
+            background-color: #dab78b;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(219, 200, 157, 0.1);
+            padding: 20px;
+            text-align: center;
+            width: 30%;
+            margin: 10px;
+        }
+        .contact-card h3 {
+            margin-bottom: 10px;
+        }
+        .contact-card p {
+            color: #f8f4f4;
+            margin-bottom: 20px;
+        }
+        .contact-card a {
+            color: #3c81ee;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .contact-card a:hover {
+            text-decoration: underline;
+        }
+        .contact-card i {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #3c81ee;
+        }
+        @media (max-width: 768px) {
+            .contact-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-container">
+        <div class="contact-card">
+            <i class="bi bi-geo-alt"></i>
+            <h3>Address</h3>
+            <p>380 Bd Brahim Roudani, Casablanca</p>
+                <p><a href="https://www.google.com/maps/search/?api=1&query=380+Bd+Brahim+Roudani,+Casablanca" target="_blank">Get Directions</a></p>
+        </div>
+        <div class="contact-card">
+            <i class="bi bi-envelope"></i>
+            <h3>Email</h3>
+            <p>it.competition.2024@emsi-edu.ma</p>
+            <a href="mailto:it.competition.2024@emsi-edu.ma">Send Email</a>
+        </div>
+        <div class="contact-card">
+            <i class="bi bi-phone"></i>
+            <h3>Phone</h3>
+            <p>05226-46600</p>
+            <a href="tel:+0522646600">Call Now</a>
         </div>
     </div>
-</div>
+          
 
-<!-- end team -->
-
-    <!-- FAQs Start -->
-    <div class="container-fluid py-5">
-        <div class="container py-5">
-            <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 500px;">
-                <div class="btn btn-sm border rounded-pill  px-3 mb-3" style="color: #BA8B02;">Popular FAQs</div>
-                <h1 class="mb-4">Frequently Asked Questions</h1>
-            </div>
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="accordion" id="accordionFAQ1">
-                        <div class="accordion-item wow fadeIn" data-wow-delay="0.1s">
-                            <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                    How to build a website?
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                                data-bs-parent="#accordionFAQ1">
-                                <div class="accordion-body">
-                                    Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item wow fadeIn" data-wow-delay="0.2s">
-                            <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    How long will it take to get a new website?
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                                data-bs-parent="#accordionFAQ1">
-                                <div class="accordion-body">
-                                    Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item wow fadeIn" data-wow-delay="0.3s">
-                            <h2 class="accordion-header" id="headingThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    Do you only create HTML websites?
-                                </button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                                data-bs-parent="#accordionFAQ1">
-                                <div class="accordion-body">
-                                    Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item wow fadeIn" data-wow-delay="0.4s">
-                            <h2 class="accordion-header" id="headingFour">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-                                    Will my website be mobile-friendly?
-                                </button>
-                            </h2>
-                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                                data-bs-parent="#accordionFAQ1">
-                                <div class="accordion-body">
-                                    Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="accordion" id="accordionFAQ2">
-                        <div class="accordion-item wow fadeIn" data-wow-delay="0.5s">
-                            <h2 class="accordion-header" id="headingFive">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                    Will you maintain my site for me?
-                                </button>
-                            </h2>
-                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
-                                data-bs-parent="#accordionFAQ2">
-                                <div class="accordion-body">
-                                    Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item wow fadeIn" data-wow-delay="0.6s">
-                            <h2 class="accordion-header" id="headingSix">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                    I’m on a strict budget. Do you have any low cost options?
-                                </button>
-                            </h2>
-                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
-                                data-bs-parent="#accordionFAQ2">
-                                <div class="accordion-body">
-                                    Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item wow fadeIn" data-wow-delay="0.7s">
-                            <h2 class="accordion-header" id="headingSeven">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                                    Will you maintain my site for me?
-                                </button>
-                            </h2>
-                            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
-                                data-bs-parent="#accordionFAQ2">
-                                <div class="accordion-body">
-                                    Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item wow fadeIn" data-wow-delay="0.8s">
-                            <h2 class="accordion-header" id="headingEight">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                                    I’m on a strict budget. Do you have any low cost options?
-                                </button>
-                            </h2>
-                            <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
-                                data-bs-parent="#accordionFAQ2">
-                                <div class="accordion-body">
-                                    Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
-    </div>
-    <!-- FAQs Start -->
 
+      </div>
+    </section><!-- End Contact Section -->
 
-    <!-- Team Start -->
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
    
-    <!-- Team End -->
 
-
-    <!-- Testimonial Start -->
-   
-    <!-- Testimonial End -->
-
-
-    <!-- Newsletter Start -->
-
-    <!-- Newsletter End -->
-
-
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>EMSIST</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
     
-    <!-- Footer End -->
+      
+      </div>
+    </div>
+  </footer><!-- End Footer -->
 
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-warning text-white  btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
-
-
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
 <script>
-   
-function EmsiAlert(){
-
-
-    Swal.fire({
-        title:"<h2><span style='color:#BA8B02'>EMS</span>IST</h2>",
-      imageUrl: "https://emsi.ma/wp-content/uploads/2020/07/logo-1.png",
-       showConfirmButton:false,
-      imageAlt: "Organisé Par EMSI ",
-      timer:5000,
-      showClass: {
-        popup: `
-          animate__animated
-          animate__fadeInUp
-          animate__faster
-        `
-      },
-      hideClass: {
-        popup: `
-          animate__animated
-          animate__fadeOutDown
-          animate__faster
-        `
-      }
-    });
-
-}
-
-
-
-
-setTimeout(()=>EmsiAlert(),5000);
-
+  $(".step").click(function () {
+    $(this).addClass("active").prevAll().addClass("active");
+    $(this).nextAll().removeClass("active");
+  });
+  
+  $(".step01").click(function () {
+    $("#line-progress").css("width", "8%");
+    $(".step1").addClass("active").siblings().removeClass("active");
+  });
+  
+  $(".step02").click(function () {
+    $("#line-progress").css("width", "50%");
+    $(".step2").addClass("active").siblings().removeClass("active");
+  });
+  
+  $(".step03").click(function () {
+    $("#line-progress").css("width", "100%");
+    $(".step3").addClass("active").siblings().removeClass("active");
+  });
 </script>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
